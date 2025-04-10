@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate, useParams, useLocation } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import BlogCard from '../../components/BlogCard';
 import './blog.css';
 import face_blog from '../../assets/face_blog.png';
@@ -32,7 +32,7 @@ By understanding how we move, body analytics is shaping healthier, smarter envir
 const BlogPage = () => {
   const navigate = useNavigate();
   const { id } = useParams();
-  const location = useLocation();
+  // const location = useLocation();
 
   const selectedPost = id ? blogPosts.find((post) => post.id === parseInt(id)) : null;
 

@@ -1,0 +1,146 @@
+.home-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .home-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+  }
+  
+  .nav-links a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .nav-links a:hover {
+    color: #0077ff;
+  }
+  
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    background-image: url(https://global-uploads.webflow.com/61531b23c347e4fbd4a84209/619b16d9bb2a7f6d18d19737_dots2.svg);
+  }
+  
+  .hero-text {
+    flex: 1 1 45%;
+    padding: 1rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .hero-image {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-description {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+  /* media queries */
+
+  /* ---------- Responsive Styles ---------- */
+
+@media (max-width: 768px) {
+  .home-header {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .hero-text {
+    flex: 1 1 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    flex: 1 1 100%;
+    margin-top: 1.5rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    margin: 0.3rem 0.5rem;
+  }
+
+  .home-description {
+    font-size: 0.95rem;
+  }
+}
